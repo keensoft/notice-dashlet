@@ -1,6 +1,8 @@
 Notice dashlet for Alfresco Share
 =================================
 
+*This fork includes some minor enhancements: working for Alfresco 5.X and availability also for User Dashboard*
+
 Author: Will Abson
 
 This add-on project for Alfresco Share defines a simple dashlet to display a user-defined piece of content on a user or a site dashboard. It was inspired in part by the JotPad dashlet in [SugarCRM](http://www.sugarcrm.com/).
@@ -28,6 +30,12 @@ To build the JAR file, run Ant from the base project directory.
     ant dist-jar
 
 The command should build a JAR file named `notice-dashlet-<version>.jar` in the `build/dist` directory within your project, which you can then copy into the `tomcat/shared/lib` folder of your Alfresco installation.
+
+To build the AMP file, run Ant from the base project directory.
+
+    ant dist-amp
+
+The command should build a JAR file named `notice-dashlet-<version>.amp` in the `build/dist` directory within your project.
 
 Alternatively, you can use the build script to _hot deploy_ the JAR file directly into a local Tomcat instance for testing. You will need to use the `hotcopy-tomcat-jar task` and set the `tomcat.home`
 property in Ant.

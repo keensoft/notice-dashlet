@@ -2,6 +2,6 @@
    <shortname>Site Notice</shortname>
    <description>Add a custom notice for display to site users</description>
    <authentication>user</authentication>
-   <family>site-dashlet</family>
+   <family>dashlet</family>
    <url>/components/dashlets/notice</url>
 </webscript>
